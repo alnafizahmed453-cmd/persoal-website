@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GUNSHOT — Esports Assistant Producer | Broadcast Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official portfolio of GUNSHOT, Assistant Producer at ECUBE. Specializing in vMix GT Title Design, Live Graphics, vMix & OBS live broadcasting systems in Dhaka, Bangladesh." />
+  <meta name="keywords" content="FFWS BD, Free Fire World Series, ECUBE, GT Title Designer, Live Graphics, vMix Expert, OBS Studio, Esports Broadcast Producer, Dhaka Bangladesh" />
+  <meta name="author" content="GUNSHOT" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GUNSHOT — Esports Assistant Producer" />
+  <meta property="og:description" content="GT Title Designer • Live Graphics Designer • Expert in vMix & OBS Studio • Assistant Producer." />
+  <meta property="og:image" content="assets/images/hero-portrait.jpg" />
+
+  <!-- Google Fonts Preconnect & Esports Typography Collection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,700&family=Exo+2:ital,wght@0,500;0,700;0,800;1,700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@400;600;800&family=Orbitron:wght@500;700;900&family=Oxanium:wght@500;700;800&family=Poppins:wght@400;600;700&family=Rajdhani:wght@500;600;700&family=Russo+One&family=Space+Grotesk:wght@500;700&family=Syne:wght@600;700;800&family=Teko:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       STICKY NAVIGATION BAR
+       ====================================================================== -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="Gunshot Broadcast Home">
+        <span class="brand-tally tally-pulse" title="LIVE ON-AIR TALLY"></span>
+        <span>GUNSHOT</span>
+      </a>
+
+      <!-- Streamlined Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#metrics" class="nav-link">EVENTS &amp; GAMES</a></li>
+          <li><a href="#productions" class="nav-link">WHERE I'VE PRODUCED</a></li>
+          <li><a href="#videos" class="nav-link">VIDEOS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+          <li><a href="#suggestions" class="nav-link">SUGGESTIONS</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Telemetry & Actions -->
+      <div class="nav-actions">
+
+        <div class="telemetry-indicator">
+          <div class="vu-meter-mini">
+            <span class="vu-bar vu-bar-1"></span>
+            <span class="vu-bar vu-bar-2"></span>
+            <span class="vu-bar vu-bar-3"></span>
+            <span class="vu-bar vu-bar-4"></span>
+          </div>
+          <span id="headerTimecode" class="font-mono" title="PCR Broadcast Timecode (Owner Access)" style="cursor: pointer;">BST 00:00:00:00</span>
+        </div>
+
+        <!-- Admin Session Pill (Only visible when Admin is logged in) -->
+        <div class="admin-session-pill" id="adminSessionPill" style="display: none;">
+          <span class="admin-status-tag">
+            <span class="admin-crown">👑</span>
+            <span class="font-heading">ADMIN</span>
+          </span>
+          <button type="button" class="admin-mode-toggle-btn" id="adminModeToggleBtn" title="Toggle Edit Mode On/Off">
+            <span id="adminModeToggleLabel">✏️ EDIT: OFF</span>
+          </button>
+          <button class="btn btn-outline-cyan btn-sm" id="navFontStudioBtn" title="Customize Fonts & Typography for all text">
+            <span>🔤 FONTS</span>
+          </button>
+          <button class="btn btn-outline-cyan btn-sm" id="navLiveEditToggleBtn" title="Toggle Live Text & Font Inline Editing">
+            <span id="navLiveEditBtnText">✏️ TEXT</span>
+          </button>
+          <button type="button" class="admin-logout-btn" id="adminLogoutBtn" title="Logout and return to Viewer Mode">
+            <span>🚪 LOGOUT</span>
+          </button>
+        </div>
+
+        <a href="#productions" class="btn btn-primary btn-sm">
+          <span>PORTFOLIO</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       1. HERO SECTION
+       ====================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="brand-tally tally-pulse"></span>
+            <span id="heroStatusPillText">STATUS: ON AIR // LIVE BROADCAST</span>
+            <button class="hero-login-badge-btn" id="heroLoginBadgeBtn" title="Launch Esports Master Broadcast Console">
+              <span class="live-tally-pill-dot"></span>
+              <span>🔴 MASTER CONSOLE</span>
+            </button>
+          </div>
+
+
+          <div class="hero-title-greeting" id="heroGreeting">HELLO, I'M GUNSHOT</div>
+          
+          <h1 class="hero-title-name" id="heroMainTitle">ESPORTS ASSISTANT PRODUCER</h1>
+
+          <div class="hero-subtitle-role">
+            <span class="text-cyan">◆</span>
+            <span id="heroTagline">"GT Title Designer • Live Graphics Designer • Expert in vMix &amp; OBS"</span>
+          </div>
+
+          <p class="hero-intro" id="heroIntro">
+            Currently working as an Assistant Producer at ECUBE, delivering high-tier esports tournament broadcasts with custom GT title animations, real-time graphics, and vMix/OBS master switching.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#productions" class="btn btn-primary">
+              <span>WHERE I'VE PRODUCED</span>
+              <span>➔</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>GET IN TOUCH</span>
+            </a>
+          </div>
+
+          <!-- Quick Metadata Chips (Role, Agency, Location, Tools) with Direct Edit Option -->
+          <div class="hero-metadata-wrap">
+            <div class="hero-metadata-bar-top">
+              <span class="font-mono text-cyan" style="font-size: 0.72rem; letter-spacing: 0.08em; font-weight: 800;">
+                ⚡ PRODUCTION METRICS &amp; DETAILS
+              </span>
+              <button class="hero-chip-edit-btn" id="editHeroMetadataBtn" title="Edit Current Role, Production Agency, Location and Primary Tools">
+                <span>✏️ EDIT DETAILS</span>
+              </button>
+            </div>
+            <div class="hero-metadata-grid" id="heroMetadata">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: CAM 01 Broadcast Visual -->
+        <div class="hero-visual">
+          
+          <!-- Segment Toolbar for Hero -->
+          <div class="segment-toolbar" style="margin-bottom: 12px;">
+            <label class="toolbar-btn" title="Choose a new picture for your profile">
+              <span>📷 UPLOAD PHOTO</span>
+              <input type="file" id="heroPhotoInput" accept="image/*" style="display: none;" />
+            </label>
+            <button class="toolbar-btn" id="editHeroIntroBtn" title="Edit your title, introduction, and hero texts">
+              <span>✏️ EDIT HERO &amp; HEADERS</span>
+            </button>
+          </div>
+
+          <!-- Chamfered Photo Frame -->
+          <div class="hero-image-frame" id="heroImageFrame">
+            <img id="heroProfileImage" src="assets/images/hero-portrait.jpg" alt="GUNSHOT Broadcast Producer" width="600" height="600" />
+          </div>
+
+          <!-- Floating Badge Bar (Over / Above Picture) -->
+          <div class="hero-floating-badge float-slow" id="heroFloatingBadge">
+            <!-- Top Row: Role, Subtitle, Logo & Direct Edit Action -->
+            <div class="hero-badge-top-row">
+              <div class="company-logo-badge" id="heroBadgeLogoBox">
+                <div class="ecube-logo-inner-wrapper">
+                  <img src="assets/images/ecube-logo.png" class="ecube-animated-logo" alt="ECUBE Logo" />
+                  <div class="ecube-inner-sheen"></div>
+                </div>
+              </div>
+              <div class="hero-badge-titles">
+                <div id="heroBadgeRole" style="font-weight: 800; color: white; font-size: 1rem; font-family: var(--font-heading);">ASSISTANT PRODUCER</div>
+                <div id="heroBadgeSub" style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent-cyan);">GT Titles &amp; Live Graphics</div>
+              </div>
+              <button class="hero-badge-edit-btn" id="editFloatingBadgeBtn" title="Edit Role, Subtitle, and Logo">
+                <span>✏️</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Ambient Atmospheric Glow Orbs -->
+    <div class="section-glow-orb orb-cyan" style="top: 12%; right: 4%; width: 550px; height: 550px;"></div>
+    <div class="section-glow-orb orb-purple" style="bottom: 8%; left: -6%; width: 480px; height: 480px;"></div>
+  </section>
+
+  <!-- Glowing Laser Segment Divider -->
+  <div class="section-divider"></div>
+
+  <!-- ======================================================================
+       2. ABOUT ME SECTION (CONCISE & SPECIFIC)
+       ====================================================================== -->
+  <section class="section" id="about">
+    <!-- Ambient Atmospheric Glow Orbs -->
+    <div class="section-glow-orb orb-purple" style="top: 18%; right: 6%; width: 520px; height: 520px;"></div>
+    <div class="section-glow-orb orb-cyan" style="bottom: 12%; left: 4%; width: 450px; height: 450px;"></div>
+    <div class="container">
+      
+      <!-- Segment Toolbar for About -->
+      <div class="segment-toolbar">
+        <label class="toolbar-btn" title="Upload a new picture for About Me">
+          <span>📷 UPLOAD ABOUT PIC</span>
+          <input type="file" id="aboutPhotoInput" accept="image/*" style="display: none;" />
+        </label>
+        <button class="toolbar-btn" id="editAboutStatementBtn" title="Edit your specific about me statement">
+          <span>✏️ EDIT STATEMENT</span>
+        </button>
+        <button class="toolbar-btn" id="editPillarsBtn" title="Edit pillars, text, icons, and upload custom logos">
+          <span>⚡ EDIT PILLARS &amp; LOGOS</span>
+        </button>
+      </div>
+
+      <div class="section-header" id="aboutSectionHeader">
+        <div class="section-header-top-row">
+          <div class="section-tag" id="aboutSectionTag">ABOUT ME</div>
+          <button class="section-header-edit-btn" data-section="about" title="Edit About header text">✏️ EDIT HEADER</button>
+        </div>
+        <h2 class="section-title section-title-with-logo" id="aboutSectionTitle">
+          <span class="section-title-text" id="aboutSectionTitleText">ASSISTANT PRODUCER AT</span>
+          <span class="about-title-logo-badge" id="aboutTitleLogoBadge" title="ECUBE (Event Execution Experts)" role="button" tabindex="0">
+            <span class="about-title-logo-inner">
+              <img src="assets/images/ecube-logo.png" class="about-header-ecube-img" alt="ECUBE Logo" />
+              <span class="about-logo-sheen"></span>
+            </span>
+          </span>
+        </h2>
+        <p class="section-subtitle" id="aboutSectionSub">
+          Core specialization in live broadcast engineering, real-time title design, and master switching.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left Image Frame -->
+        <div class="about-image-wrapper esports-box" id="aboutImageFrame">
+          <img id="aboutProfileImage" src="assets/images/hero-portrait.jpg" alt="GUNSHOT Assistant Producer" loading="lazy" />
+        </div>
+
+        <!-- Right Content: Specific Information -->
+        <div>
+          <!-- Specific Statement Box -->
+          <div class="about-statement-box">
+            <p class="about-statement-text" id="aboutStatement">
+              I am currently working in an Assistant Producer role at ECUBE. I specialize as a GT Title Designer, Live Graphics Designer, and an expert operator in vMix and OBS Studio for live esports championships and major tournament broadcasts.
+            </p>
+          </div>
+
+          <!-- 4 Core Pillars -->
+          <div class="pillars-grid" id="pillarsGrid">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Glowing Laser Segment Divider -->
+  <div class="section-divider"></div>
+
+  <!-- ======================================================================
+       3. BROADCAST METRICS & GAME TITLES (COUNT-UP ANIMATION & GAMES WORKED)
+       ====================================================================== -->
+  <section class="section" id="metrics" style="background: rgba(8, 11, 18, 0.72);">
+    <!-- Ambient Atmospheric Glow Orbs -->
+    <div class="section-glow-orb orb-cyan" style="top: 15%; right: -5%; width: 520px; height: 520px;"></div>
+    <div class="section-glow-orb orb-purple" style="bottom: 12%; left: -6%; width: 480px; height: 480px;"></div>
+
+    <div class="container">
+      <!-- Segment Master Action Bar -->
+      <div class="segment-toolbar">
+        <button class="btn btn-primary btn-sm" id="editMetricsStatsBtn" title="Edit Official, Local, and Unofficial event numbers">
+          <span>✏️ EDIT ALL METRICS</span>
+        </button>
+        <button class="toolbar-btn" id="addNewMetricCardBtn" title="Add a new tournament milestone card">
+          <span>➕ ADD METRIC CARD</span>
+        </button>
+        <button class="toolbar-btn" id="addNewGameBtn" title="Add a new game worked with">
+          <span>🎮 ADD / EDIT GAMES</span>
+        </button>
+        <button class="toolbar-btn" data-section="metrics" title="Edit Event Track Record & Games section header">
+          <span>✏️ EDIT HEADER</span>
+        </button>
+        <button class="toolbar-btn" id="replayCountersBtn" title="Replay count-up animation from 0">
+          <span>⚡ REPLAY COUNT-UP</span>
+        </button>
+      </div>
+
+      <div class="section-header" id="metricsSectionHeader">
+        <div class="section-header-top-row">
+          <div class="section-tag" id="metricsSectionTag">BROADCAST METRICS &amp; GAME TITLES</div>
+          <button class="section-header-edit-btn" data-section="metrics" title="Edit Metrics header">✏️ EDIT HEADER</button>
+        </div>
+        <h2 class="section-title" id="metricsSectionTitle">TOURNAMENT TRACK RECORD &amp; GAME ECOSYSTEMS</h2>
+        <p class="section-subtitle" id="metricsSectionSub">
+          Official championships, local community events, and world-class competitive titles engineered live in production.
+        </p>
+      </div>
+
+      <!-- Dedicated Metrics Action Bar (Instant Add & Edit) -->
+      <div class="metrics-section-action-bar" style="display: flex; gap: 10px; align-items: center; justify-content: flex-end; margin-bottom: 22px; flex-wrap: wrap;">
+        <button class="btn btn-primary btn-sm" id="addNewMetricCardDirectBtn" title="Add a new tournament milestone card">
+          <span>➕ ADD METRIC CARD</span>
+        </button>
+        <button class="btn btn-secondary btn-sm" id="editAllMetricsDirectBtn" title="Edit Official, Local, and Unofficial numbers in full modal">
+          <span>✏️ EDIT ALL METRICS</span>
+        </button>
+        <button class="btn btn-secondary btn-sm" id="replayCountersDirectBtn" title="Replay count animation from 0">
+          <span>⚡ REPLAY ALL COUNTERS</span>
+        </button>
+      </div>
+
+      <!-- Top Part: High-Tech Animated Metric Milestone Cards (Count-up from 0) -->
+      <div class="metrics-cards-grid" id="metricsCardsGrid">
+        <!-- Card 1: Official Events -->
+        <div class="metric-card metric-card-official esports-box" data-metric="official" data-index="0">
+          <div class="metric-card-header">
+            <span class="metric-tier-badge badge-cyan font-mono">🏆 TIER 1 // PUBLISHER</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="metric-hud-ping text-cyan">LIVE SYNC</span>
+              <button class="metric-quick-edit-btn" data-index="0" title="Edit this milestone card">✏️ EDIT</button>
+            </div>
+          </div>
+          <div class="metric-counter-wrapper">
+            <span class="metric-counter-num text-cyan font-heading" id="metricOfficialCount" data-target="10" data-suffix="+">0+</span>
+          </div>
+          <div class="metric-card-label" id="metricOfficialLabel">OFFICIAL EVENTS</div>
+          <p class="metric-card-desc">
+            Publisher-sanctioned stadium tournaments, regional finals, and premier broadcast arenas with custom GT graphics.
+          </p>
+          <div class="metric-card-footer">
+            <span class="metric-footer-tag font-mono">TIER-1 ACCREDITED</span>
+            <span class="metric-footer-icon text-cyan">⚡</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Local Events -->
+        <div class="metric-card metric-card-local esports-box" data-metric="local" data-index="1">
+          <div class="metric-card-header">
+            <span class="metric-tier-badge badge-purple font-mono">🏟️ GRASSROOTS // LAN ARENA</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="metric-hud-ping text-purple">HIGH FREQUENCY</span>
+              <button class="metric-quick-edit-btn" data-index="1" title="Edit this milestone card">✏️ EDIT</button>
+            </div>
+          </div>
+          <div class="metric-counter-wrapper">
+            <span class="metric-counter-num text-purple font-heading" id="metricLocalCount" data-target="200" data-suffix="+">0+</span>
+          </div>
+          <div class="metric-card-label" id="metricLocalLabel">LOCAL EVENTS</div>
+          <p class="metric-card-desc">
+            Regional LAN showdowns, university esports leagues, gaming cafe tournaments, and community stage productions.
+          </p>
+          <div class="metric-card-footer">
+            <span class="metric-footer-tag font-mono">HIGH-VOLUME PRODUCTION</span>
+            <span class="metric-footer-icon text-purple">🔥</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Unofficial Events -->
+        <div class="metric-card metric-card-unofficial esports-box" data-metric="unofficial" data-index="2">
+          <div class="metric-card-header">
+            <span class="metric-tier-badge badge-gold font-mono">🎯 INVITATIONAL // SCENE</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="metric-hud-ping text-gold">CUSTOM FORMAT</span>
+              <button class="metric-quick-edit-btn" data-index="2" title="Edit this milestone card">✏️ EDIT</button>
+            </div>
+          </div>
+          <div class="metric-counter-wrapper">
+            <span class="metric-counter-num text-gold font-heading" id="metricUnofficialCount" data-target="5" data-suffix="+">0+</span>
+          </div>
+          <div class="metric-card-label" id="metricUnofficialLabel">UNOFFICIAL</div>
+          <p class="metric-card-desc">
+            Creator invitationals, independent community cups, and custom esports showmatches with tailored broadcast packages.
+          </p>
+          <div class="metric-card-footer">
+            <span class="metric-footer-tag font-mono">CUSTOM BROADCASTING</span>
+            <span class="metric-footer-icon text-gold">⚡</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider / Games Header -->
+      <div class="games-worked-section-header">
+        <div class="games-header-left">
+          <div class="games-header-badge font-mono" id="gamesWorkedSectionTag">COMPETITIVE ECOSYSTEMS</div>
+          <h3 class="games-header-title font-heading" id="gamesWorkedSectionTitle">GAMES WORKED WITH IN BROADCAST &amp; TITLE DESIGN</h3>
+          <p class="games-header-sub" id="gamesWorkedSectionSub">
+            Specialized in vMix multi-feed switching, custom GT Title scoreboards, and real-time observer telemetry across premier esports titles.
+          </p>
+        </div>
+        <div class="games-header-right" style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <button class="btn btn-secondary btn-sm" id="editGamesHeaderBtn" title="Edit Games subheader and description">
+            <span>✏️ EDIT SUBHEADER</span>
+          </button>
+          <button class="btn btn-primary btn-sm" id="addNewGameHeaderBtn" title="Add a new game title to this section">
+            <span>➕ ADD GAME</span>
+          </button>
+          <button class="btn btn-secondary btn-sm" id="manageGamesBtn" title="Edit games and esports titles">
+            <span>🎮 EDIT GAME CARDS</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Games Worked Grid -->
+      <div class="games-worked-grid" id="gamesWorkedGrid">
+        <!-- Dynamically rendered from appState.workedGames -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Glowing Laser Segment Divider -->
+  <div class="section-divider"></div>
+
+  <!-- ======================================================================
+       4. WHERE I'VE PRODUCED (PRIMARY PORTFOLIO SHOWCASE)
+       Format: [TOURNAMENT NAME] UNDER [COMPANY/AGENCY]
+       ====================================================================== -->
+  <section class="section" id="productions" style="background: rgba(10, 13, 20, 0.5);">
+    <!-- Ambient Atmospheric Glow Orbs -->
+    <div class="section-glow-orb orb-cyan" style="top: 10%; left: -6%; width: 580px; height: 580px;"></div>
+    <div class="section-glow-orb orb-gold" style="bottom: 14%; right: -4%; width: 520px; height: 520px;"></div>
+    
+    <div class="container">
+      
+      <!-- Segment Master Action Bar -->
+      <div class="segment-toolbar">
+        <button class="btn btn-primary btn-sm" id="addNewProductionBtn" title="Add a new tournament or production event">
+          <span>➕ ADD NEW TOURNAMENT</span>
+        </button>
+        <button class="toolbar-btn" data-section="productions" title="Edit Where I've Produced header and subtitle">
+          <span>✏️ EDIT HEADER</span>
+        </button>
+        <button class="toolbar-btn" id="resetDataBtn" title="Reset all custom edits back to defaults">
+          <span>🔄 RESET DEFAULTS</span>
+        </button>
+      </div>
+
+      <div class="section-header" id="productionsSectionHeader">
+        <div class="section-header-top-row">
+          <div class="section-tag" id="productionsSectionTag">OFFICIAL PRODUCTION PORTFOLIO</div>
+          <button class="section-header-edit-btn" data-section="productions" title="Edit Where I've Produced header">✏️ EDIT HEADER</button>
+        </div>
+        <h2 class="section-title" id="productionsSectionTitle">WHERE I'VE PRODUCED</h2>
+        <p class="section-subtitle" id="productionsSectionSub">
+          Tournaments, championships, and live broadcasts executed under ECUBE and esports partners. Use the upload and edit bars on each card to customize pictures, videos, or details.
+        </p>
+      </div>
+
+      <!-- Productions Cards Grid -->
+      <div class="productions-grid" id="productionsGrid">
+        <!-- Dynamically rendered (FFWS BD FALL 2026 UNDER ECUBE, etc.) -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Glowing Laser Segment Divider -->
+  <div class="section-divider"></div>
+
+  <!-- ======================================================================
+       4. BROADCAST VIDEO SHOWCASE
+       ====================================================================== -->
+  <section class="section" id="videos">
+    <!-- Ambient Atmospheric Glow Orbs -->
+    <div class="section-glow-orb orb-cyan" style="top: 20%; right: 4%; width: 520px; height: 520px;"></div>
+    <div class="section-glow-orb orb-purple" style="bottom: 10%; left: 8%; width: 460px; height: 460px;"></div>
+    
+    <div class="container">
+      
+      <!-- Segment Action Bar for Videos -->
+      <div class="segment-toolbar">
+        <button class="btn btn-primary btn-sm" id="jumpToBulkUploadBtn" title="Jump to Bulk Video Ingestion Station">
+          <span>📁 BULK UPLOAD BAY</span>
+        </button>
+        <button class="toolbar-btn" id="toolbarBatchLinksBtn" title="Batch paste video stream links">
+          <span>🔗 BATCH LINKS</span>
+        </button>
+        <label class="toolbar-btn" title="Upload a single video file">
+          <span>➕ UPLOAD SINGLE</span>
+          <input type="file" id="singleVideoInput" accept="video/*" style="display: none;" />
+        </label>
+        <button class="toolbar-btn" data-section="videos" title="Edit Video showcase header and description">
+          <span>✏️ EDIT HEADER</span>
+        </button>
+        <input type="file" id="bulkVideoInput" accept="video/*" multiple style="display: none;" />
+      </div>
+
+      <div class="section-header" id="videosSectionHeader">
+        <div class="section-header-top-row">
+          <div class="section-tag" id="videosSectionTag">BROADCAST MOTION</div>
+          <button class="section-header-edit-btn" data-section="videos" title="Edit Videos header text">✏️ EDIT HEADER</button>
+        </div>
+        <h2 class="section-title" id="videosSectionTitle">VIDEO SHOWCASE &amp; REELS</h2>
+        <p class="section-subtitle" id="videosSectionSub">
+          Watch showreels, live GT title animations, and control room switching in action.
+        </p>
+      </div>
+
+      <!-- ==================================================================
+           DEDICATED BULK VIDEO INGESTION & UPLOAD CONSOLE
+           ================================================================== -->
+      <div class="bulk-video-station hud-card" id="bulkVideoStation">
+        <div class="bulk-station-header">
+          <div class="bulk-station-header-left">
+            <span class="brand-tally tally-pulse"></span>
+            <div class="bulk-station-title-box">
+              <h3 class="bulk-station-title">BROADCAST VIDEO INGESTION BAY</h3>
+              <div class="bulk-station-sub font-mono">BULK VIDEO FILE UPLOADER &amp; BATCH REEL MANAGER</div>
+            </div>
+          </div>
+          <div class="bulk-station-header-right">
+            <span class="bulk-count-badge font-mono" id="bulkVideosCountBadge">3 SHOWREELS LOADED</span>
+            <button class="btn btn-secondary btn-sm" id="toggleBulkStationBtn" title="Collapse or Expand Bulk Upload Bay">
+              <span id="bulkStationToggleText">▲ COLLAPSE INGEST BAY</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="bulk-station-body" id="bulkStationBody">
+          <!-- Drag & Drop Zone / Bulk Selector -->
+          <div class="bulk-drop-zone" id="bulkVideoDropZone">
+            <div class="bulk-drop-icon">📥</div>
+            <h4 class="bulk-drop-title">DRAG &amp; DROP MULTIPLE TOURNAMENT VIDEOS HERE</h4>
+            <p class="bulk-drop-sub">
+              Upload multiple MP4, WebM, or MOV showreels at once • Automatically extracts HD video thumbnails and exact duration timestamps into local client storage.
+            </p>
+            <div class="bulk-drop-btn-row">
+              <label class="btn btn-primary" style="cursor: pointer;">
+                <span>📁 SELECT MULTIPLE VIDEO FILES</span>
+                <input type="file" id="bulkStationFileInput" accept="video/*" multiple style="display: none;" />
+              </label>
+              <button type="button" class="btn btn-secondary" id="bulkPasteUrlsBtn">
+                <span>🔗 BATCH PASTE VIDEO LINKS</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Batch Preset Metadata Controls -->
+          <div class="bulk-batch-presets">
+            <div class="bulk-preset-field">
+              <label class="bulk-preset-label font-mono">DEFAULT TOURNAMENT / EVENT TAG:</label>
+              <input type="text" id="bulkDefaultEventInput" class="form-input form-input-sm" value="FFWS BD 2026 // LIVE REEL" placeholder="e.g. FFWS BD 2026 // LIVE REEL" />
+            </div>
+            <div class="bulk-preset-field">
+              <label class="bulk-preset-label font-mono">DEFAULT PRODUCTION ROLE:</label>
+              <input type="text" id="bulkDefaultRoleInput" class="form-input form-input-sm" value="Assistant Producer &amp; GT Title Designer" placeholder="e.g. Assistant Producer &amp; GT Title Designer" />
+            </div>
+          </div>
+
+          <!-- Active Upload / Queue Status HUD -->
+          <div id="bulkUploadQueueWrap" style="display: none;">
+            <div class="bulk-queue-header">
+              <div class="font-mono text-cyan" id="bulkQueueStatusTitle">INGESTION QUEUE ACTIVE</div>
+              <div class="font-mono text-cyan" id="bulkQueuePercent" style="font-weight: 800;">0%</div>
+            </div>
+            <div class="bulk-progress-bar-track">
+              <div class="bulk-progress-bar-fill" id="bulkQueueProgressBar" style="width: 0%;"></div>
+            </div>
+            <div class="bulk-queue-log font-mono text-muted" id="bulkQueueLogText">Preparing video extraction pipeline...</div>
+            <div class="bulk-queue-items-list" id="bulkQueueItemsList"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="videos-grid" id="videosGrid">
+        <!-- Dynamically rendered -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Glowing Laser Segment Divider -->
+  <div class="section-divider"></div>
+
+  <!-- ======================================================================
+       5. CONTACT SECTION
+       ====================================================================== -->
+  <section class="section" id="contact" style="background: rgba(12, 16, 24, 0.65);">
+    <!-- Ambient Atmospheric Glow Orbs -->
+    <div class="section-glow-orb orb-purple" style="top: 15%; left: 4%; width: 540px; height: 540px;"></div>
+    <div class="section-glow-orb orb-cyan" style="bottom: 12%; right: 8%; width: 480px; height: 480px;"></div>
+    <div class="container">
+      
+      <!-- Segment Toolbar for Contact -->
+      <div class="segment-toolbar">
+        <button class="toolbar-btn" id="editContactMethodsBtn" title="Edit direct email, phone, location, discord, icons, and upload logos">
+          <span>📞 EDIT CONTACT INFO</span>
+        </button>
+        <button class="toolbar-btn" id="editContactFormBtn" title="Edit contact form labels, dropdown options, and button text">
+          <span>📝 EDIT FORM</span>
+        </button>
+        <button class="toolbar-btn" data-section="contact" title="Edit Contact header and description">
+          <span>✏️ EDIT HEADER</span>
+        </button>
+      </div>
+
+      <div class="section-header" id="contactSectionHeader">
+        <div class="section-header-top-row">
+          <div class="section-tag" id="contactSectionTag">COMMUNICATIONS</div>
+          <button class="section-header-edit-btn" data-section="contact" title="Edit Contact header text">✏️ EDIT HEADER</button>
+        </div>
+        <h2 class="section-title" id="contactSectionTitle">CONNECT WITH ME</h2>
+        <p class="section-subtitle" id="contactSectionSub">
+          Inquire about tournament productions, GT title design projects, live broadcast crew booking, or general collaboration.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Channels -->
+        <div>
+          <div class="contact-methods-top-bar">
+            <span class="section-tag" style="font-size: 0.75rem; margin-bottom: 0;">DIRECT CHANNELS</span>
+            <div style="display: flex; gap: 8px;">
+              <button type="button" class="section-header-edit-btn" id="addContactMethodBtn" title="Add new contact channel">➕ ADD CHANNEL</button>
+              <button type="button" class="section-header-edit-btn" id="manageContactMethodsBtn" title="Manage all contact channels">✏️ EDIT ALL</button>
+            </div>
+          </div>
+
+          <div id="contactMethods">
+            <!-- Dynamically populated -->
+          </div>
+
+          <div style="margin-top: 24px;">
+            <div class="social-channels-header-row">
+              <div class="section-tag" style="font-size: 0.75rem; margin-bottom: 0;">SOCIAL CHANNELS</div>
+              <button class="section-header-edit-btn" id="editSocialsBtn" title="Edit social links, text, icons, and logos">✏️ EDIT SOCIALS &amp; LOGOS</button>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;" id="socialLinksRow">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div>
+          <form class="contact-form hud-card" id="contactForm">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+              <span class="section-tag" id="formHeaderTag" style="font-size: 0.75rem; margin-bottom: 0;">DIRECT BROADCAST DISPATCH</span>
+              <button type="button" class="section-header-edit-btn" id="editFormInlineBtn" title="Edit form labels and button text">✏️ EDIT FORM</button>
+            </div>
+
+            <div class="form-group">
+              <label for="contactName" class="form-label" id="contactNameLabel">YOUR FULL NAME *</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Alex Morgan" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label" id="contactEmailLabel">EMAIL ADDRESS *</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="name@organization.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label" id="contactSubjectLabel">SUBJECT / PROJECT TYPE *</label>
+              <select id="contactSubject" class="form-select" required>
+                <!-- Populated dynamically -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label" id="contactMessageLabel">MESSAGE DETAILS *</label>
+              <textarea id="contactMessage" class="form-textarea" placeholder="Describe tournament scope, dates, or broadcast requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100" id="contactSubmitBtn" style="width: 100%;">
+              <span id="contactSubmitBtnText">SEND TRANSMISSION DISPATCH ➔</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glowing Laser Segment Divider -->
+  <div class="section-divider"></div>
+
+  <!-- ======================================================================
+       6. VIEWER COMMENTS & SUGGESTIONS HUB
+       ====================================================================== -->
+  <section class="section" id="suggestions">
+    <div class="container">
+      
+      <!-- Segment Toolbar for Suggestions -->
+      <div class="segment-toolbar">
+        <button class="toolbar-btn" id="editSuggestionsHeaderBtn" title="Edit section header title and subtitle">
+          <span>✏️ EDIT HEADER</span>
+        </button>
+        <button class="toolbar-btn" id="resetSuggestionsBtn" title="Reset suggestions to defaults">
+          <span>🔄 RESET DEFAULTS</span>
+        </button>
+      </div>
+
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="section-tag" id="suggestionsTag">COMMUNITY &amp; BROADCAST FEEDBACK</span>
+        <h2 class="section-title" id="suggestionsTitle">VIEWER COMMENTS &amp; SUGGESTIONS</h2>
+        <p class="section-subtitle" id="suggestionsSubtitle">
+          Drop your tournament ideas, broadcast suggestions, GT Title design critiques, or community shoutouts for upcoming championship productions.
+        </p>
+      </div>
+
+      <!-- Main Layout: Form (Left) & Feed (Right) -->
+      <div class="suggestions-grid">
+        
+        <!-- Left: Interactive Submission Form -->
+        <div class="suggestions-form-card">
+          <div class="suggestions-form-header">
+            <div class="brand-tally tally-pulse"></div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-family: var(--font-heading); color: #ffffff; margin: 0;">
+                LEAVE A COMMENT / SUGGESTION
+              </h3>
+              <p style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono); margin: 4px 0 0 0;">
+                LIVE BROADCAST DISPATCH // ALL VIEWERS WELCOME
+              </p>
+            </div>
+          </div>
+
+          <form id="suggestionSubmitForm" style="margin-top: 20px;">
+            <div class="form-group">
+              <label for="sugAuthor" class="form-label">YOUR NAME OR CALLSIGN *</label>
+              <input type="text" id="sugAuthor" class="form-input" placeholder="e.g. Caster_Alex or Spectator#42" required />
+            </div>
+
+            <div class="form-group">
+              <label for="sugRole" class="form-label">WHO ARE YOU? (ROLE / TITLE)</label>
+              <input type="text" id="sugRole" class="form-input" placeholder="e.g. Esports Viewer, Caster, Player, Producer" />
+            </div>
+
+            <div class="form-group">
+              <label for="sugCategory" class="form-label">FEEDBACK CATEGORY *</label>
+              <select id="sugCategory" class="form-select" required>
+                <option value="suggestion">💡 Broadcast Suggestion</option>
+                <option value="feedback">🎨 GT Title &amp; Graphics Feedback</option>
+                <option value="idea">🏆 Tournament Production Idea</option>
+                <option value="shoutout">🔥 General Shoutout &amp; Praise</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">BROADCAST RATING / ENERGY</label>
+              <div class="sug-rating-picker" id="sugRatingPicker">
+                <button type="button" class="sug-star-btn active" data-rating="5" title="5 Stars / Pure Hype">⭐⭐⭐⭐⭐ 5/5</button>
+                <button type="button" class="sug-star-btn" data-rating="4" title="4 Stars / Great">⭐⭐⭐⭐ 4/5</button>
+                <button type="button" class="sug-star-btn" data-rating="3" title="3 Stars / Solid">⭐⭐⭐ 3/5</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="sugMessage" class="form-label">YOUR COMMENT OR SUGGESTION *</label>
+              <textarea id="sugMessage" class="form-textarea" rows="4" placeholder="Tell me what you liked, what graphics we should add, tournament ideas, or suggestions for next live broadcast..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100" id="sugSubmitBtn" style="width: 100%;">
+              <span>🚀 TRANSMIT SUGGESTION / COMMENT ➔</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Filterable Comments Feed -->
+        <div class="suggestions-feed-panel">
+          
+          <!-- Category Filter Bar & Counter -->
+          <div class="sug-filter-bar">
+            <div class="sug-filter-tabs" id="sugFilterTabs">
+              <button class="sug-filter-tab active" data-filter="all">ALL (<span id="sugCountAll">0</span>)</button>
+              <button class="sug-filter-tab" data-filter="suggestion">💡 SUGGESTIONS</button>
+              <button class="sug-filter-tab" data-filter="feedback">🎨 GRAPHICS</button>
+              <button class="sug-filter-tab" data-filter="idea">🏆 IDEAS</button>
+              <button class="sug-filter-tab" data-filter="shoutout">🔥 SHOUTOUTS</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Comments Stream List -->
+          <div class="suggestions-list" id="suggestionsList">
+            <!-- Populated dynamically via JS -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Glowing Laser Segment Divider -->
+  <div class="section-divider"></div>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-title">
+            <span class="text-cyan">GUNSHOT</span>
+          </div>
+          <p class="footer-brand-sub">
+            Esports Assistant Producer at ECUBE specializing in vMix GT Title Design, Live Graphics, and vMix/OBS master switching.
+          </p>
+          <div style="margin-top: 16px;">
+            <span class="badge badge-live tally-pulse">LIVE BROADCAST READY</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">NAVIGATION</div>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#productions">Where I've Produced</a></li>
+            <li><a href="#videos">Videos &amp; Reels</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#suggestions">Viewer Suggestions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">DIRECT CHANNELS</div>
+          <ul class="footer-links" style="margin-bottom: 20px;">
+            <li><a href="mailto:gunshot.broadcast@gmail.com">gunshot.broadcast@gmail.com</a></li>
+            <li><a href="tel:+8801700000000">+880 1700-000000</a></li>
+            <li><span class="text-muted">Dhaka, Bangladesh</span></li>
+          </ul>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;" id="footerSocials">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>GUNSHOT</strong>. Assistant Producer at ECUBE. All Rights Reserved.
+        </div>
+
+        <div class="broadcast-clock-box">
+          <span class="brand-tally tally-pulse"></span>
+          <span id="broadcastClock" class="font-mono" title="PCR Studio Clock" style="cursor: pointer;">BST 00:00:00:00</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MODALS
+       ====================================================================== -->
+
+  <!-- 0. Lead Producer / Owner Admin Authentication Modal -->
+  <div class="modal-backdrop" id="adminAuthModal" role="dialog" aria-modal="true" aria-label="Lead Producer Admin Authentication" style="display: none;">
+    <div class="modal-container modal-enter pcr-auth-card" style="max-width: 480px; padding: 28px;">
+      <button class="modal-close-btn" id="closeAdminAuthModalBtn" aria-label="Close Authentication Modal">✕</button>
+      
+      <div class="pcr-auth-header">
+        <div class="pcr-auth-icon-badge">
+          <span class="pcr-auth-lock-icon">🔐</span>
+        </div>
+        <div>
+          <div class="font-mono text-cyan" style="font-size: 0.72rem; letter-spacing: 0.08em; font-weight: 800;">
+            ● PCR-01 // SECURITY CLEARANCE
+          </div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: #ffffff; margin: 2px 0 0; letter-spacing: 0.04em;">
+            LEAD PRODUCER ADMIN ACCESS
+          </h3>
+        </div>
+      </div>
+
+      <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 16px 0 20px;">
+        Lead Producer clearance required. Enter authorization passcode to access control room and live management tools.
+      </p>
+
+      <form id="adminAuthForm">
+        <div class="form-group" style="margin-bottom: 16px;">
+          <label for="adminPasscode" class="form-label" style="font-size: 0.78rem;">ADMIN PASSCODE *</label>
+          <div class="pcr-input-group">
+            <input type="password" id="adminPasscode" class="form-input" placeholder="Enter authorization passcode..." autocomplete="current-password" required />
+            <button type="button" class="pcr-show-pass-btn" id="toggleAdminPassVisibilityBtn" title="Toggle password visibility">👁️</button>
+          </div>
+        </div>
+
+        <div class="form-group" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px;">
+          <label style="display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: var(--text-secondary); cursor: pointer;">
+            <input type="checkbox" id="adminRememberMeCheckbox" checked style="accent-color: var(--accent-cyan);" />
+            <span>Keep me logged in on this device</span>
+          </label>
+        </div>
+
+        <div id="adminAuthError" class="pcr-auth-error-msg" style="display: none;"></div>
+
+        <div style="display: flex; gap: 12px; justify-content: flex-end;">
+          <button type="button" class="btn btn-secondary btn-sm" id="cancelAdminAuthBtn">
+            CANCEL
+          </button>
+          <button type="submit" class="btn btn-primary btn-sm" id="submitAdminAuthBtn">
+            <span>UNLOCK ADMIN CONTROLS ➔</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 1. Video Player Modal -->
+  <div class="modal-backdrop" id="videoModal" role="dialog" aria-modal="true" aria-label="Broadcast Video Player">
+    <div class="modal-container modal-enter" style="max-width: 840px; overflow: hidden; padding: 0;">
+      <button class="modal-close-btn" aria-label="Close video player">✕</button>
+      <div id="videoModalContainer">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 1B. Batch Video URLs Importer Modal -->
+  <div class="modal-backdrop" id="bulkUrlModal" role="dialog" aria-modal="true" aria-label="Batch Paste Video URLs">
+    <div class="modal-container modal-enter" style="max-width: 680px; padding: 28px;">
+      <button class="modal-close-btn" id="closeBulkUrlModalBtn" aria-label="Close batch URL modal">✕</button>
+      <div style="margin-bottom: 18px;">
+        <div class="font-mono text-cyan" style="font-size: 0.8rem; letter-spacing: 0.06em; margin-bottom: 4px;">🔗 BROADCAST STREAM INGESTION</div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-white); margin: 0; letter-spacing: 0.03em;">BATCH IMPORT VIDEO LINKS</h3>
+      </div>
+      <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.55; margin-bottom: 16px;">
+        Paste multiple video URLs below (one per line). Supports YouTube, Google Drive, and direct .mp4/.webm video links.
+        <br/><span class="font-mono text-cyan" style="font-size: 0.8rem;">Format per line: URL &nbsp;or&nbsp; Title | URL | Event | Role</span>
+      </p>
+      <textarea id="bulkUrlTextarea" class="form-textarea" rows="7" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ
+FFWS Finals Cut | https://www.youtube.com/watch?v=dQw4w9WgXcQ | FFWS BD 2026 | Assistant Producer
+GT Title Showcase | https://example.com/showreel.mp4 | NOVA FORCE | GT Title Specialist" style="font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 20px;"></textarea>
+      <div style="display: flex; justify-content: flex-end; gap: 12px;">
+        <button type="button" class="btn btn-secondary btn-sm" id="cancelBulkUrlBtn">CANCEL</button>
+        <button type="button" class="btn btn-primary btn-sm" id="confirmBulkUrlImportBtn">
+          <span>🚀 IMPORT ALL LINKS</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Generic Edit & Add Modal -->
+  <div class="modal-backdrop" id="editModal" role="dialog" aria-modal="true" aria-label="Edit Details Modal">
+    <div class="modal-container modal-enter" style="max-width: 680px;">
+      <button class="modal-close-btn" aria-label="Close edit modal">✕</button>
+      <div id="editModalBody">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Photo Lightbox Modal -->
+  <div class="modal-backdrop" id="photoLightboxModal" role="dialog" aria-modal="true" aria-label="Event Photo View">
+    <div class="lightbox-content-box modal-enter">
+      <button class="modal-close-btn" id="closePhotoLightboxBtn" aria-label="Close photo preview">✕</button>
+      <div class="lightbox-image-container">
+        <button class="lightbox-nav-btn lightbox-nav-prev" id="prevLightboxPhotoBtn" title="Previous photo" aria-label="Previous photo">‹</button>
+        <img id="lightboxPhotoImg" src="" alt="Event photo preview" />
+        <button class="lightbox-nav-btn lightbox-nav-next" id="nextLightboxPhotoBtn" title="Next photo" aria-label="Next photo">›</button>
+      </div>
+      <div class="lightbox-footer">
+        <div>
+          <div class="lightbox-caption-title" id="lightboxPhotoCaption">EVENT PHOTO</div>
+          <div class="font-mono text-muted" id="lightboxPhotoSub" style="font-size: 0.8rem;">OFFICIAL TOURNAMENT PRODUCTION</div>
+        </div>
+        <div class="lightbox-counter" id="lightboxPhotoCounter">PHOTO 1 / 1</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       4. BROADCAST TYPOGRAPHY & FONT STUDIO MODAL
+       ====================================================================== -->
+  <div class="modal-backdrop" id="fontStudioModal" role="dialog" aria-modal="true" aria-label="Broadcast Typography and Font Studio">
+    <div class="modal-container modal-enter" style="max-width: 860px; max-height: 90vh; overflow-y: auto; padding: 28px;">
+      <button class="modal-close-btn" id="closeFontStudioModalBtn" aria-label="Close Typography Studio">✕</button>
+
+      <div style="margin-bottom: 22px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 14px; display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <div class="font-mono text-cyan" style="font-size: 0.8rem; letter-spacing: 0.08em; font-weight: 800; margin-bottom: 4px;">
+            🔤 BROADCAST GRAPHICS &amp; ENGINE
+          </div>
+          <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: #ffffff; margin: 0; letter-spacing: 0.03em;">
+            TYPOGRAPHY &amp; FONT STUDIO
+          </h2>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" class="btn btn-outline-cyan btn-sm" id="chooseAnyTextFromFontStudioBtn" title="Click any text element directly on the website to change its font">
+            <span>🎯 CHOOSE ANY TEXT ON PAGE</span>
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm" id="resetFontsModalBtn" title="Reset all fonts to default GFF Latin &amp; Inter">
+            <span>🔄 RESET DEFAULTS</span>
+          </button>
+        </div>
+      </div>
+
+      <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.55; margin-bottom: 20px;">
+        Customize the typography across your entire website. Switch between official esports fonts (GFF Latin, Orbitron, Rajdhani, Teko), adjust sizes, or type any Google Font name to load live.
+      </p>
+
+      <div class="typography-studio-grid">
+        <!-- 1. Quick Esports Preset Themes -->
+        <div class="typo-section-card">
+          <div class="typo-section-header">
+            <span class="typo-section-title">⚡ QUICK 1-CLICK ESPORTS PRESETS</span>
+            <span class="font-mono text-muted" style="font-size: 0.72rem;">INSTANT THEME SWITCH</span>
+          </div>
+          <div class="typo-presets-grid" id="typoPresetsGrid">
+            <div class="typo-preset-card active" data-preset="official">
+              <div class="typo-preset-name">🏆 OFFICIAL FREE FIRE</div>
+              <div class="typo-preset-sub">GFF Latin + Inter</div>
+            </div>
+            <div class="typo-preset-card" data-preset="cyber">
+              <div class="typo-preset-name">👾 CYBER TACTICAL</div>
+              <div class="typo-preset-sub">Orbitron + Chakra Petch</div>
+            </div>
+            <div class="typo-preset-card" data-preset="tournament">
+              <div class="typo-preset-name">⚡ TOURNAMENT PRO</div>
+              <div class="typo-preset-sub">Teko + Rajdhani</div>
+            </div>
+            <div class="typo-preset-card" data-preset="heavy">
+              <div class="typo-preset-name">💥 HEAVY IMPACT</div>
+              <div class="typo-preset-sub">Russo One + Space Grotesk</div>
+            </div>
+            <div class="typo-preset-card" data-preset="headline">
+              <div class="typo-preset-name">🎯 BOLD HEADLINE</div>
+              <div class="typo-preset-sub">Bebas Neue + Montserrat</div>
+            </div>
+            <div class="typo-preset-card" data-preset="condensed">
+              <div class="typo-preset-name">🔥 GFF CONDENSED</div>
+              <div class="typo-preset-sub">GFF CdMedium + GFF Regular</div>
+            </div>
+            <div class="typo-preset-card" data-preset="clean">
+              <div class="typo-preset-name">🌐 CLEAN BROADCAST</div>
+              <div class="typo-preset-sub">Montserrat + Inter</div>
+            </div>
+            <div class="typo-preset-card" data-preset="avant">
+              <div class="typo-preset-name">✨ AVANT-GARDE</div>
+              <div class="typo-preset-sub">Syne + Poppins</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Granular Font Family Selectors -->
+        <div class="typo-section-card">
+          <div class="typo-section-header">
+            <span class="typo-section-title">🎨 CUSTOM FONT PICKERS (BY CATEGORY)</span>
+            <span class="font-mono text-muted" style="font-size: 0.72rem;">PER-ELEMENT TARGETING</span>
+          </div>
+
+          <div class="typo-pickers-grid">
+            <!-- Global / All Text Master Font Override -->
+            <div class="typo-picker-field" style="grid-column: 1 / -1; background: rgba(0, 240, 255, 0.05); padding: 12px; border-radius: var(--radius-chamfer-sm); border: 1px dashed rgba(0, 240, 255, 0.3);">
+              <label class="typo-picker-label">
+                <span style="color: var(--accent-cyan); font-weight: 800;">🌐 MASTER FONT (OVERRIDE ALL TEXT ON SITE)</span>
+                <span class="text-muted">Optional global override</span>
+              </label>
+              <select id="selectGlobalFont" class="typo-picker-select">
+                <option value="inherit">Disabled (Use Category Fonts Below)</option>
+              </select>
+            </div>
+
+            <!-- Headings Font -->
+            <div class="typo-picker-field">
+              <label class="typo-picker-label">
+                <span>HEADINGS &amp; TITLES</span>
+                <span class="text-muted">H1-H6, Hero Name, Section Titles</span>
+              </label>
+              <select id="selectHeadingFont" class="typo-picker-select"></select>
+            </div>
+
+            <!-- Body Font -->
+            <div class="typo-picker-field">
+              <label class="typo-picker-label">
+                <span>BODY &amp; PARAGRAPHS</span>
+                <span class="text-muted">Intro, About Bio, Descriptions</span>
+              </label>
+              <select id="selectBodyFont" class="typo-picker-select"></select>
+            </div>
+
+            <!-- Badges & Tags Font -->
+            <div class="typo-picker-field">
+              <label class="typo-picker-label">
+                <span>HUD BADGES &amp; TAGS</span>
+                <span class="text-muted">Status pills, Role pills, Chips</span>
+              </label>
+              <select id="selectBadgeFont" class="typo-picker-select"></select>
+            </div>
+
+            <!-- Buttons & Nav Links Font -->
+            <div class="typo-picker-field">
+              <label class="typo-picker-label">
+                <span>BUTTONS &amp; NAVIGATION</span>
+                <span class="text-muted">Buttons, Toolbar actions, Navbar</span>
+              </label>
+              <select id="selectBtnFont" class="typo-picker-select"></select>
+            </div>
+
+            <!-- Monospace & Telemetry Font -->
+            <div class="typo-picker-field" style="grid-column: 1 / -1;">
+              <label class="typo-picker-label">
+                <span>BROADCAST TELEMETRY &amp; TIME CODE</span>
+                <span class="text-muted">Clock, Stream meters, Tech stats</span>
+              </label>
+              <select id="selectMonoFont" class="typo-picker-select"></select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Fine Tuning & Sliders -->
+        <div class="typo-section-card">
+          <div class="typo-section-header">
+            <span class="typo-section-title">📐 FINE-TUNING &amp; SCALING</span>
+            <span class="font-mono text-muted" style="font-size: 0.72rem;">SIZE &amp; SPACING</span>
+          </div>
+
+          <div class="typo-sliders-grid">
+            <div class="typo-slider-wrap">
+              <div class="typo-slider-header">
+                <span>OVERALL FONT SIZE SCALE</span>
+                <span class="typo-slider-val" id="fontSizeScaleVal">100%</span>
+              </div>
+              <input type="range" id="fontSizeScaleRange" class="typo-range-input" min="80" max="130" step="5" value="100" />
+            </div>
+
+            <div class="typo-slider-wrap">
+              <div class="typo-slider-header">
+                <span>HEADING LETTER SPACING</span>
+                <span class="typo-slider-val" id="letterSpacingVal">0.03em</span>
+              </div>
+              <input type="range" id="letterSpacingRange" class="typo-range-input" min="-5" max="25" step="1" value="3" />
+            </div>
+
+            <div class="typo-picker-field">
+              <label class="typo-picker-label">
+                <span>HEADING FONT WEIGHT</span>
+              </label>
+              <select id="selectHeadingWeight" class="typo-picker-select">
+                <option value="400">Regular (400)</option>
+                <option value="600">SemiBold (600)</option>
+                <option value="700">Bold (700)</option>
+                <option value="800">ExtraBold (800)</option>
+                <option value="900" selected>Black / Ultra (900)</option>
+              </select>
+            </div>
+
+            <div class="typo-picker-field">
+              <label class="typo-picker-label">
+                <span>HEADING CASE TRANSFORM</span>
+              </label>
+              <select id="selectHeadingTransform" class="typo-picker-select">
+                <option value="uppercase" selected>UPPERCASE (Esports Standard)</option>
+                <option value="capitalize">Capitalize (Title Case)</option>
+                <option value="none">Normal (As Typed)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Dynamic Google Font Ingester -->
+        <div class="typo-section-card">
+          <div class="typo-section-header">
+            <span class="typo-section-title">🚀 LOAD ANY CUSTOM GOOGLE FONT</span>
+            <span class="font-mono text-cyan" style="font-size: 0.72rem;">INSTANT INGESTION</span>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 12px;">
+            Want a specific font from <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan); text-decoration: underline;">Google Fonts</a>? Type its exact name (e.g., <em>Cinzel</em>, <em>Audiowide</em>, <em>Anton</em>, <em>Righteous</em>, <em>Outfit</em>):
+          </p>
+          <div style="display: flex; gap: 10px;">
+            <input type="text" id="customGoogleFontInput" class="form-input" placeholder="e.g. Audiowide, Anton, Outfit, Cinzel" style="font-family: var(--font-mono); font-size: 0.88rem;" />
+            <button type="button" class="btn btn-primary btn-sm" id="loadCustomFontBtn" style="white-space: nowrap;">
+              <span>➕ LOAD FONT</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Real-Time Typography Preview Card -->
+        <div class="typo-live-preview-box" id="typoLivePreviewBox">
+          <div class="typo-preview-badge-row">
+            <span class="badge badge-live">LIVE PREVIEW</span>
+            <span class="section-tag" style="margin-bottom: 0;">ESPORTS TOURNAMENT</span>
+          </div>
+          <h1 class="typo-preview-h1" id="previewH1">GUNSHOT — BROADCAST DIRECTOR</h1>
+          <div class="typo-preview-role" id="previewRole">GT TITLE SPECIALIST • vMIX MASTER SWITCHER</div>
+          <p class="typo-preview-body" id="previewBody">
+            Delivering high-tier esports tournament broadcasts with custom animated scoreboards, dynamic Singular.live overlays, and broadcast telemetry switching for Free Fire, PUBG Mobile, and Valorant championships.
+          </p>
+          <div class="typo-preview-btn-row">
+            <button class="btn btn-primary btn-sm" type="button"><span>ACTION BUTTON</span></button>
+            <button class="btn btn-secondary btn-sm" type="button"><span>SECONDARY OUTLINE</span></button>
+            <span class="font-mono text-cyan" style="font-size: 0.82rem; margin-left: auto;">BST 20:45:12:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-subtle);">
+        <button type="button" class="btn btn-secondary btn-sm" id="closeFontStudioFooterBtn">CLOSE</button>
+        <button type="button" class="btn btn-primary btn-sm" id="saveAndApplyFontsBtn">
+          <span>💾 SAVE &amp; APPLY PERMANENTLY</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       4B. BROADCAST TEXT GLOW, LIGHT & ANIMATION STUDIO MODAL
+       ====================================================================== -->
+  <div class="modal-backdrop" id="textGlowStudioModal" role="dialog" aria-modal="true" aria-label="Broadcast Text Glow and Light Studio">
+    <div class="modal-container modal-enter" style="max-width: 860px; max-height: 90vh; overflow-y: auto; padding: 28px;">
+      <button class="modal-close-btn" id="closeTextGlowModalBtn" aria-label="Close Text Glow Studio">✕</button>
+
+      <div style="margin-bottom: 22px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 14px; display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <div class="font-mono text-cyan" style="font-size: 0.8rem; letter-spacing: 0.08em; font-weight: 800; margin-bottom: 4px;">
+            ✨ VOLUMETRIC BROADCAST FX
+          </div>
+          <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: #ffffff; margin: 0; letter-spacing: 0.03em;">
+            TEXT GLOW, LIGHT &amp; ANIMATION STUDIO
+          </h2>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" class="btn btn-outline-cyan btn-sm" id="chooseAnyTextFromGlowStudioBtn" title="Click any text element directly on the website to customize its glow">
+            <span>🎯 CHOOSE ANY TEXT ON PAGE</span>
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm" id="resetGlowModalBtn" title="Turn off text glow across website">
+            <span>🔄 RESET GLOW</span>
+          </button>
+        </div>
+      </div>
+
+      <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.55; margin-bottom: 20px;">
+        Fine-tune text illumination across your entire website or on individual headlines. Adjust glow size like font sizes, choose neon light colors, and animate with dynamic breathing, pulsing, neon flickering, or laser glints.
+      </p>
+
+      <div class="typography-studio-grid">
+        <!-- 1. Quick Glow Presets -->
+        <div class="glow-studio-card">
+          <div class="glow-studio-card-title">
+            <span>⚡ QUICK 1-CLICK GLOW PRESETS</span>
+            <span class="font-mono text-muted" style="font-size: 0.72rem;">INSTANT ILLUMINATION</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px;" id="masterGlowPresetsGrid">
+            <button type="button" class="glow-preset-btn" data-glow-preset="cyber_cyan">
+              <span style="color: #00f0ff;">✨</span>
+              <span>CYBER CYAN</span>
+            </button>
+            <button type="button" class="glow-preset-btn" data-glow-preset="neon_purple">
+              <span style="color: #8b5cf6;">🔮</span>
+              <span>NEON PURPLE</span>
+            </button>
+            <button type="button" class="glow-preset-btn" data-glow-preset="tournament_gold">
+              <span style="color: #ffb800;">👑</span>
+              <span>TOURNAMENT GOLD</span>
+            </button>
+            <button type="button" class="glow-preset-btn" data-glow-preset="crimson_flicker">
+              <span style="color: #ff2a55;">🔥</span>
+              <span>CRIMSON FLICKER</span>
+            </button>
+            <button type="button" class="glow-preset-btn" data-glow-preset="matrix_emerald">
+              <span style="color: #00ff9d;">🟢</span>
+              <span>MATRIX EMERALD</span>
+            </button>
+            <button type="button" class="glow-preset-btn" data-glow-preset="laser_white">
+              <span style="color: #ffffff;">⚡</span>
+              <span>LASER WHITE</span>
+            </button>
+            <button type="button" class="glow-preset-btn" data-glow-preset="glow_off" style="border-color: rgba(255,42,85,0.4); color: var(--text-muted);">
+              <span>✕</span>
+              <span>CLEAN (NO GLOW)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Master Glow Radius & Controls -->
+        <div class="glow-studio-card">
+          <div class="glow-studio-card-title">
+            <span>📐 MASTER GLOW RADIUS &amp; LIGHT COLOR</span>
+            <span class="font-mono text-cyan" id="masterGlowValBadge">0px</span>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <!-- Radius Slider + Step buttons -->
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label for="masterGlowRadiusRange" class="glow-drawer-label">GLOW SIZE / RADIUS:</label>
+                <div style="display: flex; gap: 6px; align-items: center;">
+                  <button type="button" class="btn btn-secondary btn-sm" id="masterGlowMinusBtn" style="padding: 2px 8px; font-weight: 800;">-</button>
+                  <span class="font-mono text-cyan" id="masterGlowRadiusVal" style="font-size: 0.85rem; min-width: 40px; text-align: center;">0px</span>
+                  <button type="button" class="btn btn-secondary btn-sm" id="masterGlowPlusBtn" style="padding: 2px 8px; font-weight: 800;">+</button>
+                </div>
+              </div>
+              <input type="range" min="0" max="120" step="1" value="0" class="glow-range-slider" id="masterGlowRadiusRange" style="width: 100%;" />
+              <!-- Quick Glow Limit Level Chips -->
+              <div style="margin-top: 8px;">
+                <div style="font-size: 0.72rem; color: var(--text-muted); font-family: var(--font-mono); margin-bottom: 5px;">QUICK GLOW LIMIT LEVEL:</div>
+                <div class="glow-limit-chips" id="masterGlowLimitChips">
+                  <button type="button" class="glow-limit-chip" data-master-limit="0">0px Off</button>
+                  <button type="button" class="glow-limit-chip" data-master-limit="15">15px Subtle</button>
+                  <button type="button" class="glow-limit-chip" data-master-limit="35">35px Neon</button>
+                  <button type="button" class="glow-limit-chip" data-master-limit="60">60px High</button>
+                  <button type="button" class="glow-limit-chip" data-master-limit="90">90px Ultra</button>
+                  <button type="button" class="glow-limit-chip glow-limit-chip-max" data-master-limit="120">120px MAX Limit</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Light Color Swatches -->
+            <div>
+              <label class="glow-drawer-label" style="display: block; margin-bottom: 6px;">LIGHT COLOR OF GLOW:</label>
+              <div class="glow-color-swatches" id="masterGlowColorSwatches" style="gap: 10px;">
+                <button type="button" class="glow-swatch glow-cyan active" data-color="#00f0ff" title="Cyan Light" style="width: 24px; height: 24px;"></button>
+                <button type="button" class="glow-swatch glow-purple" data-color="#8b5cf6" title="Purple Light" style="width: 24px; height: 24px;"></button>
+                <button type="button" class="glow-swatch glow-gold" data-color="#ffb800" title="Gold Light" style="width: 24px; height: 24px;"></button>
+                <button type="button" class="glow-swatch glow-green" data-color="#00ff9d" title="Green Light" style="width: 24px; height: 24px;"></button>
+                <button type="button" class="glow-swatch glow-red" data-color="#ff2a55" title="Red Light" style="width: 24px; height: 24px;"></button>
+                <button type="button" class="glow-swatch glow-white" data-color="#ffffff" title="White Light" style="width: 24px; height: 24px;"></button>
+                <input type="color" id="masterGlowCustomColor" value="#00f0ff" title="Custom Hex Color" style="width: 26px; height: 26px; border: none; border-radius: 50%; cursor: pointer; background: transparent; padding: 0;" />
+              </div>
+            </div>
+
+            <!-- Glow Target Scope (ALL TEXTS vs HEADINGS) -->
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px dashed rgba(255,255,255,0.12);">
+              <label class="glow-drawer-label" style="display: block; margin-bottom: 6px;">GLOW APPLIES TO:</label>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="masterGlowScopeButtons">
+                <button type="button" class="btn btn-outline-cyan btn-sm active" id="glowScopeAllTextsBtn" data-scope="all" style="font-size: 0.76rem; padding: 5px 12px;">
+                  <span>🌟 ALL TEXTS ACROSS SITE</span>
+                </button>
+                <button type="button" class="btn btn-secondary btn-sm" id="glowScopeHeadingsBtn" data-scope="headings" style="font-size: 0.76rem; padding: 5px 12px;">
+                  <span>👑 HEADINGS &amp; TITLES ONLY</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Glow Animation Engine -->
+        <div class="glow-studio-card">
+          <div class="glow-studio-card-title">
+            <span>🎬 GLOW ANIMATION ENGINE</span>
+            <span class="font-mono text-muted" style="font-size: 0.72rem;">DYNAMIC MOTION</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;">
+            <div>
+              <label for="masterGlowAnimSelect" class="glow-drawer-label" style="display: block; margin-bottom: 6px;">ANIMATION MODE:</label>
+              <select id="masterGlowAnimSelect" class="form-input" style="width: 100%; font-family: var(--font-heading); font-size: 0.85rem;">
+                <option value="none">Static (No Animation)</option>
+                <option value="breathe">Breathe 💨 (Smooth Cosmic Rise)</option>
+                <option value="pulse">Pulse 💓 (Esports Heartbeat)</option>
+                <option value="flicker">Neon Flicker ⚡ (Cyber Arcade)</option>
+                <option value="laser">Laser Glint ✨ (Broadcast Sheen)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="masterGlowSpeedSelect" class="glow-drawer-label" style="display: block; margin-bottom: 6px;">ANIMATION SPEED:</label>
+              <select id="masterGlowSpeedSelect" class="form-input" style="width: 100%; font-family: var(--font-heading); font-size: 0.85rem;">
+                <option value="3s">Normal (3.0s)</option>
+                <option value="1.8s">Fast (1.8s)</option>
+                <option value="5s">Slow &amp; Ambient (5.0s)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Real-Time Interactive Glow Preview Card -->
+        <div class="typo-live-preview-box" id="glowLivePreviewBox" style="margin-top: 4px;">
+          <div class="typo-preview-badge-row">
+            <span class="badge badge-live" id="glowPreviewBadge">REAL-TIME GLOW ENGINE</span>
+            <span class="section-tag" id="glowPreviewTag" style="margin-bottom: 0;">ESPORTS BROADCAST</span>
+          </div>
+          <h1 class="hero-title-name" id="glowPreviewH1" style="font-size: 2.2rem; margin: 12px 0 6px;">
+            GUNSHOT — BROADCAST DIRECTOR
+          </h1>
+          <div class="section-title-text" id="glowPreviewRole" style="font-size: 1.1rem; color: var(--accent-cyan); font-weight: 800; margin-bottom: 10px;">
+            GT TITLE SPECIALIST • vMIX MASTER SWITCHER
+          </div>
+          <p id="glowPreviewDesc" style="color: var(--text-secondary); font-size: 0.88rem; margin: 0; line-height: 1.6;">
+            Interactive lighting bloom will automatically render across tournament banners, countdown clocks, metrics, and all custom text elements.
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-subtle);">
+        <button type="button" class="btn btn-secondary btn-sm" id="closeTextGlowFooterBtn">CLOSE</button>
+        <button type="button" class="btn btn-primary btn-sm" id="saveAndApplyGlowBtn">
+          <span>💾 SAVE &amp; APPLY SITE-WIDE</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       ESPORTS MASTER PRODUCTION CONTROL ROOM (PCR) CONSOLE LOGIN OVERLAY
+       ====================================================================== -->
+  <div class="broadcast-login-overlay hidden-overlay" id="broadcastLoginOverlay" role="dialog" aria-modal="true" aria-label="Esports Master Broadcast Control Room Console" style="display: none;">
+    <!-- Broadcast Studio Backdrop Glows & Fine Grid -->
+    <div class="pcr-backdrop-grid"></div>
+    <div class="pcr-glow-orb pcr-orb-pgm-red"></div>
+    <div class="pcr-glow-orb pcr-orb-studio-cyan"></div>
+    <div class="pcr-glow-orb pcr-orb-amber"></div>
+
+    <!-- Live Telemetry / Audio Frequency Canvas (Ultra-clean, zero glitch) -->
+    <canvas class="pcr-telemetry-canvas" id="cyberMatrixCanvas"></canvas>
+
+    <!-- Main Broadcast Master Console Window -->
+    <div class="login-terminal-window pcr-master-console" id="loginTerminalWindow">
+      <!-- High-Precision Broadcast Header Bevel -->
+      <div class="pcr-console-header-accent"></div>
+
+      <!-- Top Master Broadcast Telemetry Bar -->
+      <div class="login-top-bar pcr-top-bar">
+        <div class="pcr-top-left-cluster">
+          <!-- Live Program / Preview Tallies -->
+          <div class="pcr-tally-group">
+            <span class="pcr-tally-badge pcr-tally-pgm" id="pcrTallyPgm">
+              <span class="tally-led-dot tally-pulse-red"></span>
+              <span>PGM ON-AIR</span>
+            </span>
+            <span class="pcr-tally-badge pcr-tally-prv" id="pcrTallyPrv">
+              <span class="tally-led-dot tally-pulse-green"></span>
+              <span>PRV SYNCED</span>
+            </span>
+          </div>
+
+          <!-- Studio Master Title & Timecode -->
+          <div class="pcr-title-box">
+            <span class="pcr-console-title font-heading">ECUBE ESPORTS PRODUCTION CONTROL ROOM</span>
+            <span class="pcr-timecode font-mono" id="pcrTimecodeTicker">TC 01:00:00:00 • 59.94 FPS</span>
+          </div>
+        </div>
+
+        <div class="login-top-controls">
+          <button class="login-ctrl-btn pcr-ctrl-btn" id="loginAudioToggleBtn" title="Toggle Broadcast Studio Audio Feedback">
+            <span id="loginAudioIcon">🔊 STUDIO AUDIO ON</span>
+          </button>
+          <button class="login-ctrl-btn pcr-ctrl-btn" id="loginSkipBtn" title="Skip Initialization and Enter Website">
+            <span>ESC / SKIP ➔</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Master Console Body -->
+      <div class="login-terminal-content pcr-console-content">
+        <!-- Left Column: Operator Credentials & Camera Viewfinder -->
+        <div class="login-avatar-scanner-col pcr-operator-column">
+          <div class="pcr-viewfinder-frame" id="loginScannerFrame">
+            <!-- Viewfinder Optical Reticle Overlay -->
+            <div class="vf-corner-tl"></div>
+            <div class="vf-corner-tr"></div>
+            <div class="vf-corner-bl"></div>
+            <div class="vf-corner-br"></div>
+            <div class="vf-thirds-grid"></div>
+            <div class="vf-center-target"></div>
+            
+            <img src="assets/images/hero-portrait.jpg" id="loginScannerAvatar" alt="Broadcast Operator Authentication" />
+            
+            <!-- Sleek Precision Laser Sweep -->
+            <div class="pcr-laser-sweep"></div>
+            
+            <!-- Bottom Viewfinder HUD Data -->
+            <div class="pcr-vf-hud-bar">
+              <span class="font-mono" id="loginScannerHudText">● CAM-01 // 4K 12G-SDI LOCKED</span>
+              <span class="font-mono pcr-iso-rec">● ISO REC</span>
+            </div>
+          </div>
+
+          <!-- Operator Credentials Card -->
+          <div class="pcr-operator-card">
+            <div class="pcr-op-header">
+              <div class="pcr-op-badge">CREW ID: #0942-A</div>
+              <div class="pcr-op-status">CLEARANCE: TIER-1</div>
+            </div>
+            <div class="login-op-title font-heading" id="loginOpTitle">GUNSHOT</div>
+            <div class="login-op-sub font-mono" id="loginOpSub">ESPORTS ASSISTANT PRODUCER • GT TITLE DESIGNER</div>
+            <div class="pcr-op-station font-mono">
+              <span class="pcr-op-lbl">STATION:</span>
+              <strong class="text-cyan">PCR-01 MAIN SWITCHER</strong>
+              <span class="pcr-op-lbl">AGENCY:</span>
+              <strong class="text-white">ECUBE</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Switcher Bus, Multiviewer, VU Meters & Diagnostics -->
+        <div class="login-stream-col pcr-stream-column">
+          <!-- Master Switcher Status & VU Audio Meters -->
+          <div class="pcr-metrics-header">
+            <div class="pcr-metrics-info">
+              <span class="pcr-metrics-tag font-mono">● MASTER BROADCAST BUS ROUTING</span>
+              <span class="pcr-metrics-sub font-mono">vMix 4K MASTER • BLACKMAGIC 12G-SDI MATRIX</span>
+            </div>
+            <div class="pcr-audio-meter-box" title="Master Dante Audio Stereo VU Meter">
+              <div class="pcr-vu-channel">
+                <span class="pcr-vu-label">L</span>
+                <div class="pcr-vu-track" id="pcrVuLeft">
+                  <div class="pcr-vu-bar"></div>
+                </div>
+              </div>
+              <div class="pcr-vu-channel">
+                <span class="pcr-vu-label">R</span>
+                <div class="pcr-vu-track" id="pcrVuRight">
+                  <div class="pcr-vu-bar"></div>
+                </div>
+              </div>
+            </div>
+            <span class="login-percent-label font-mono" id="loginPercentLabel">0%</span>
+          </div>
+
+          <!-- High-Precision Broadcast Progress Track -->
+          <div class="pcr-progress-container">
+            <div class="login-progress-track pcr-progress-track">
+              <div class="login-progress-fill pcr-progress-fill" id="loginProgressFill">
+                <span class="login-progress-laser pcr-progress-pip"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Multiviewer Monitor Deck (Trio of 3 broadcast mini-previews) -->
+          <div class="pcr-multiviewer-deck">
+            <div class="pcr-mv-tile">
+              <div class="pcr-mv-header">
+                <span class="tally-pip tally-pgm"></span>
+                <span>CAM 1 // MAIN STAGE</span>
+                <span class="pcr-mv-fps font-mono">59.94</span>
+              </div>
+              <div class="pcr-mv-screen pcr-screen-cam1">
+                <div class="pcr-screen-scanline"></div>
+                <div class="pcr-mv-overlay-tag">PGM 4K</div>
+              </div>
+            </div>
+
+            <div class="pcr-mv-tile">
+              <div class="pcr-mv-header">
+                <span class="tally-pip tally-prv"></span>
+                <span>CAM 2 // CASTER DESK</span>
+                <span class="pcr-mv-fps font-mono">59.94</span>
+              </div>
+              <div class="pcr-mv-screen pcr-screen-cam2">
+                <div class="pcr-screen-scanline"></div>
+                <div class="pcr-mv-overlay-tag">PRV 1080p</div>
+              </div>
+            </div>
+
+            <div class="pcr-mv-tile">
+              <div class="pcr-mv-header">
+                <span class="tally-pip tally-gfx"></span>
+                <span>GFX // GT LOWER 3RD</span>
+                <span class="pcr-mv-fps font-mono">ALPHA</span>
+              </div>
+              <div class="pcr-mv-screen pcr-screen-gfx">
+                <div class="pcr-screen-scanline"></div>
+                <div class="pcr-mv-overlay-tag">FILL+KEY</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diagnostic Production Control Room Logs -->
+          <div class="login-diag-box pcr-diag-box font-mono" id="loginDiagBox">
+            <!-- Dynamic step logs appended here -->
+          </div>
+
+          <!-- Master Control Clearance Granted Banner -->
+          <div class="login-access-banner pcr-access-banner" id="loginAccessBanner" style="display: none;">
+            <div class="pcr-access-banner-inner">
+              <div class="pcr-access-icon">🔴</div>
+              <div class="pcr-access-text-wrap">
+                <div class="pcr-access-title font-heading">
+                  MASTER PRODUCTION CONTROL ENGAGED // ALL SYSTEMS ON AIR
+                </div>
+                <div class="pcr-access-sub font-mono">
+                  OPERATOR GUNSHOT CONFIRMED • 8 CHANNELS SYNCHRONIZED @ 60 FPS • STREAM ENCODERS LOCKED
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Telemetry & Action Bar -->
+      <div class="login-footer-bar pcr-footer-bar">
+        <div class="pcr-footer-telemetry font-mono">
+          <span class="pcr-spec-pill">ENGINE: vMix 27 PRO</span>
+          <span class="pcr-spec-pill">I/O: BLACKMAGIC 12G-SDI</span>
+          <span class="pcr-spec-pill">AUDIO: DANTE 32-CH</span>
+          <span class="pcr-spec-pill">NET: NDI-HB 10GbE</span>
+        </div>
+        <button class="btn btn-primary btn-sm pcr-enter-btn" id="loginEnterHomeBtn" style="display: none;">
+          <span>ENTER BROADCAST DECK ➔</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       5. LIVE TEXT & FONT EDIT HUD STATUS BAR (ACTIVE IN EDIT MODE)
+       ====================================================================== -->
+  <div class="live-edit-hud-bar" id="liveEditHudBar" style="display: none;">
+    <div class="container live-edit-hud-container">
+      <div class="live-edit-status">
+        <span class="brand-tally tally-pulse"></span>
+        <span class="live-edit-status-title">⚡ LIVE TEXT &amp; FONT EDIT MODE ACTIVE</span>
+        <span class="live-edit-status-hint">🎯 Click ANY text on screen to change font, size &amp; glow limit (up to 120px)</span>
+      </div>
+      <div class="live-edit-actions">
+        <button type="button" class="btn btn-outline btn-sm" id="liveEditOpenFontsBtn">
+          <span>🔤 FONT STUDIO</span>
+        </button>
+        <button type="button" class="btn btn-outline btn-sm" id="liveEditOpenGlowBtn" title="Broadcast Text Glow &amp; Light Studio">
+          <span>✨ GLOW STUDIO</span>
+        </button>
+        <button type="button" class="btn btn-outline btn-sm" id="liveEditResetAllTextBtn" style="border-color: rgba(255,42,85,0.45); color: var(--accent-red);" title="Revert all inline text edits back to original">
+          <span>🔄 RESET TEXT</span>
+        </button>
+        <button type="button" class="btn btn-primary btn-sm" id="liveEditDoneBtn">
+          <span>✓ DONE EDITING</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       6. FLOATING INLINE TYPOGRAPHY & TEXT TOOLSTRIP (ATTACHED TO CLICKED ELEMENT)
+       ====================================================================== -->
+  <div class="inline-text-toolstrip" id="inlineTextToolstrip" style="display: none;">
+    <div class="toolstrip-drag-handle">⚡ FONT &amp; GLOW FX</div>
+    <div class="toolstrip-control-group">
+      <label class="toolstrip-label" for="inlineFontFamilySelect">FONT:</label>
+      <select class="toolstrip-select" id="inlineFontFamilySelect">
+        <option value="">(Inherit Font)</option>
+        <optgroup label="Official Free Fire">
+          <option value="'GFF Latin Black', sans-serif">GFF Latin Black</option>
+          <option value="'GFF Latin', sans-serif">GFF Latin Bold</option>
+          <option value="'GFF Latin', sans-serif">GFF Latin Medium</option>
+          <option value="'GFF Latin Condensed', sans-serif">GFF Latin Condensed</option>
+        </optgroup>
+        <optgroup label="Esports &amp; Combat">
+          <option value="'Orbitron', sans-serif">Orbitron (Cyber)</option>
+          <option value="'Rajdhani', sans-serif">Rajdhani (Tactical)</option>
+          <option value="'Teko', sans-serif">Teko (Tournament)</option>
+          <option value="'Chakra Petch', sans-serif">Chakra Petch</option>
+          <option value="'Russo One', sans-serif">Russo One (Heavy)</option>
+          <option value="'Bebas Neue', sans-serif">Bebas Neue (Headline)</option>
+          <option value="'Oxanium', sans-serif">Oxanium (HUD)</option>
+          <option value="'Exo 2', sans-serif">Exo 2 (Futuristic)</option>
+        </optgroup>
+        <optgroup label="Clean &amp; Tech">
+          <option value="'Inter', sans-serif">Inter (Clean)</option>
+          <option value="'Space Grotesk', sans-serif">Space Grotesk</option>
+          <option value="'Montserrat', sans-serif">Montserrat</option>
+          <option value="'Poppins', sans-serif">Poppins</option>
+          <option value="'Syne', sans-serif">Syne (Avant-Garde)</option>
+          <option value="'JetBrains Mono', monospace">JetBrains Mono (Code)</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="toolstrip-btn-group">
+      <button type="button" class="toolstrip-btn" id="inlineFontSmallerBtn" title="Decrease font size">A-</button>
+      <button type="button" class="toolstrip-btn" id="inlineFontBiggerBtn" title="Increase font size">A+</button>
+      <button type="button" class="toolstrip-btn" id="inlineFontBoldBtn" title="Toggle bold weight">B</button>
+      <button type="button" class="toolstrip-btn" id="inlineFontCaseBtn" title="Toggle uppercase">TT</button>
+    </div>
+
+    <!-- Text Glow Up/Down & FX Group -->
+    <div class="toolstrip-glow-group" title="Text Glow Illumination">
+      <button type="button" class="toolstrip-btn" id="inlineGlowDownBtn" title="Decrease Text Glow (✨-)">✨-</button>
+      <span class="toolstrip-glow-indicator" id="inlineGlowValBadge" title="Current Text Glow Radius">0px</span>
+      <button type="button" class="toolstrip-btn" id="inlineGlowUpBtn" title="Increase Text Glow (✨+)">✨+</button>
+      <button type="button" class="toolstrip-btn" id="inlineGlowDrawerToggleBtn" title="Toggle Light Color &amp; Animation Drawer">🎨▼</button>
+    </div>
+
+    <div class="toolstrip-colors">
+      <button type="button" class="color-dot color-cyan" data-color="#00f0ff" title="Cyan"></button>
+      <button type="button" class="color-dot color-purple" data-color="#8b5cf6" title="Purple"></button>
+      <button type="button" class="color-dot color-gold" data-color="#ffb800" title="Gold"></button>
+      <button type="button" class="color-dot color-white" data-color="#ffffff" title="White"></button>
+      <button type="button" class="color-dot color-red" data-color="#ff2a55" title="Red"></button>
+      <button type="button" class="color-dot color-green" data-color="#00ff9d" title="Green"></button>
+    </div>
+
+    <div class="toolstrip-actions">
+      <button type="button" class="toolstrip-action-btn toolstrip-save" id="inlineSaveBtn" title="Save text and font styling">
+        <span>✓ SAVE</span>
+      </button>
+      <button type="button" class="toolstrip-action-btn toolstrip-close" id="inlineCloseBtn" title="Close toolstrip">
+        ✕
+      </button>
+    </div>
+
+    <!-- Collapsible Glow Light & Animation Drawer -->
+    <div class="toolstrip-glow-drawer" id="inlineGlowDrawer" style="display: none;">
+      <!-- Row 1: Light Color Swatches -->
+      <div class="glow-drawer-row">
+        <span class="glow-drawer-label">GLOW LIGHT:</span>
+        <div class="glow-color-swatches" id="inlineGlowColorSwatches">
+          <button type="button" class="glow-swatch glow-cyan active" data-glow-color="#00f0ff" title="Cyan Light"></button>
+          <button type="button" class="glow-swatch glow-purple" data-glow-color="#8b5cf6" title="Purple Light"></button>
+          <button type="button" class="glow-swatch glow-gold" data-glow-color="#ffb800" title="Gold Light"></button>
+          <button type="button" class="glow-swatch glow-green" data-glow-color="#00ff9d" title="Green Light"></button>
+          <button type="button" class="glow-swatch glow-red" data-glow-color="#ff2a55" title="Red Light"></button>
+          <button type="button" class="glow-swatch glow-white" data-glow-color="#ffffff" title="Laser White Light"></button>
+          <button type="button" class="glow-swatch glow-none" data-glow-color="none" title="No Glow">✕</button>
+        </div>
+      </div>
+      <!-- Row 2: Precision Radius Slider (Up to 120px) -->
+      <div class="glow-drawer-row">
+        <span class="glow-drawer-label">GLOW RADIUS:</span>
+        <input type="range" min="0" max="120" step="1" value="0" class="glow-range-slider" id="inlineGlowRange" title="Drag to adjust glow size (up to 120px)" />
+        <span class="font-mono text-cyan" id="inlineGlowRangeVal" style="font-size: 0.72rem; min-width: 38px;">0px</span>
+      </div>
+      <!-- Row 2b: Quick Glow Limit Level Chips -->
+      <div class="glow-drawer-row glow-drawer-chips-row">
+        <span class="glow-drawer-label">LIMIT LEVEL:</span>
+        <div class="glow-limit-chips" id="inlineGlowLimitChips">
+          <button type="button" class="glow-limit-chip" data-limit="0" title="Turn glow off">0px Off</button>
+          <button type="button" class="glow-limit-chip" data-limit="12" title="Subtle ambient glow">12px</button>
+          <button type="button" class="glow-limit-chip" data-limit="25" title="Standard neon glow">25px</button>
+          <button type="button" class="glow-limit-chip" data-limit="50" title="Vivid high glow">50px</button>
+          <button type="button" class="glow-limit-chip" data-limit="85" title="Hyper beam illumination">85px</button>
+          <button type="button" class="glow-limit-chip glow-limit-chip-max" data-limit="120" title="Maximum 120px cosmic glow limit">120px MAX</button>
+        </div>
+      </div>
+      <!-- Row 3: Animation Mode & Speed -->
+      <div class="glow-drawer-row">
+        <span class="glow-drawer-label">ANIMATION:</span>
+        <select class="toolstrip-select" id="inlineGlowAnimSelect" style="max-width: 120px;">
+          <option value="none">Static (None)</option>
+          <option value="breathe">Breathe 💨</option>
+          <option value="pulse">Pulse 💓</option>
+          <option value="flicker">Neon Flicker ⚡</option>
+          <option value="laser">Laser Glint ✨</option>
+        </select>
+        <select class="toolstrip-select" id="inlineGlowSpeedSelect" style="max-width: 85px;">
+          <option value="3s">Normal</option>
+          <option value="5s">Slow</option>
+          <option value="1.5s">Fast</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       7. FLOATING HUD QUICK DOCK (BOTTOM-RIGHT BROADCAST CONTROLS)
+       ====================================================================== -->
+  <div class="floating-hud-dock" id="floatingHudDock">
+    <button type="button" class="hud-dock-btn" id="dockFontStudioBtn" title="Broadcast Typography &amp; Font Studio">
+      <span class="hud-dock-icon">🔤</span>
+      <span class="hud-dock-label">FONTS</span>
+    </button>
+    <button type="button" class="hud-dock-btn" id="dockGlowStudioBtn" title="Broadcast Text Glow &amp; Light Studio">
+      <span class="hud-dock-icon">✨</span>
+      <span class="hud-dock-label">GLOW</span>
+    </button>
+    <button type="button" class="hud-dock-btn" id="dockLiveEditBtn" title="Toggle Click-to-Edit Mode for All Text">
+      <span class="hud-dock-icon">✏️</span>
+      <span class="hud-dock-label" id="dockLiveEditLabel">EDIT TEXT</span>
+    </button>
+    <button type="button" class="hud-dock-btn hud-dock-reset" id="dockResetFontsBtn" title="Reset All Typography to Defaults">
+      <span class="hud-dock-icon">🔄</span>
+      <span class="hud-dock-label">RESET</span>
+    </button>
+  </div>
+
+  <!-- Broadcast HUD Interactive Custom Cursor Elements -->
+  <div class="hud-cursor-dot" id="cursorDot"></div>
+  <div class="hud-cursor-ring" id="cursorRing"></div>
+
+  <!-- Central Data Store (Must load before app.js) -->
+  <script src="data/portfolioData.js"></script>
+
+  <!-- Application Engine -->
+  <script src="scripts/app.js"></script>
+
+</body>
+</html>
